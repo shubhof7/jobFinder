@@ -1,0 +1,211 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.eprofile-box{
+	  border-radius: 4px;
+  	  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+	  padding: 10px 12px;
+	  margin: 50px auto; 
+}
+
+.profile-img img{
+	height: 150px;
+	width: 150;
+}
+
+.ap-jobs h1{
+	color: #00a651;
+	font-size: 55px;
+}
+
+.ap-jobs{
+	padding: 20px;
+}
+
+.profile-icons img{
+	width: 35px;
+	height: 35px;
+}
+
+.second-row{
+	font-size: 14px;
+	line-height: 22px;
+	color: #2d3038;
+}
+
+.second-row .icons {
+	color: #00a651;
+	font-size: 30px;
+	float: left;
+	margin-right: 30px;
+}
+
+.second-row .career-info,
+.second-row .declaration-info,
+.second-row .work-info,
+.second-row .educational-info,
+.second-row .qualification,
+.second-row .personal-info,
+.educational-info ul,
+.proficiency {
+	overflow: hidden;
+}
+
+.second-row h3 {
+	margin-top: 5px;
+	margin-bottom: 35px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.second-row .career-info span,
+.second-row .declaration-info span {
+	margin-bottom: 25px;
+	display: block;
+}
+.work-history h4 {
+	font-size: 14px;
+	color: #2d3038;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.work-history h4 span {
+	display: block;
+	font-weight: 400;
+	margin-top: 5px;
+	line-height: 22px;
+}
+
+.work-history ul li,
+.educational-info ul li {
+	margin-bottom: 55px;
+	position: relative;
+}
+
+.work-history ul li:last-child {
+	margin-bottom: 0;
+}
+
+.work-history ul li:after,
+.educational-info ul li:after {
+	position: absolute;
+	content: "";
+	bottom: -25px;
+	left: 0;
+	width: 85%;
+	height: 1px;
+	background-color: #f1f1f1;
+}
+
+.work-history ul li:last-child:after {
+	display: none;
+}
+
+.work-history ul li:last-child.history,
+.educational-info ul li:last-child {
+	margin-bottom: 0;
+}
+
+.educational-info h4 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #2d3038;
+	margin-bottom: 5px;
+}
+
+.educational-info li ul {
+	margin-bottom: 20px;
+}
+
+.educational-info ul li {
+	position: relative;
+}
+
+.educational-info li ul li:after {
+	display: none;
+} 
+
+.educational-info li ul li {
+	float: left;
+	font-weight: 500;
+	color: #2d3038;
+	margin-bottom: 0;
+}
+
+.educational-info li ul li span {
+	font-weight: 400;
+}
+
+.educational-info li ul li+li {
+	margin-left: 40px;
+}
+
+.qualification li {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.qualification li span {
+	font-weight: 700;
+}
+
+.qualification li:last-child {
+	margin-bottom: 0;
+}
+
+.language-proficiency h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.language-proficiency ul>li+li {
+    margin-left: 20px;
+    padding-left: 30px;
+    border-left: 1px solid #f1f1f1;
+}
+
+.language-proficiency ul li ul li {
+    float: left;
+    color: #bbb;
+}
+
+.language-proficiency ul li ul li+li {
+    margin-left: 5px;
+    border-left: 0;
+    padding-left: 0;
+}
+
+.personal-info .address li {
+    overflow: hidden;
+    line-height: 30px;
+    color: #2d3038;
+    font-size: 14px;
+}
+
+.personal-info .address li h5 {
+    float: left;
+    margin-top: 5px;
+    min-width: 180px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.personal-info .address li span {
+    margin-right: 30px;
+}
+
+.declaration {
+	margin-bottom: 45px;
+}
+
+.section {
+	background-color:#fff;
+	border-radius:4px;
+	padding:35px 25px;
+	margin-bottom:25px;
+}

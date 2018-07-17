@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
+.navbar {
+  transition: all 1s ease 0s;
+  font-size: 20px;
+}
+.navbar .navbar-brand{
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Jua', sans-serif;
+  transition: all 1s ease 0s;
+  margin-right: 50px;
+}
+
+.navbar .navbar-brand img{
+  height: 70px;
+  width: auto;
+  margin: 10px;
+  transition: all 1s ease 0s;
+}
+
+
+.navbar ul li a{
+  color: white;
+  font-weight: 0;
+  font-size: 18px;
+  transition: all 1s ease 0s;
+}
+
+.navbar ul li a{
+  margin:0 20px;
+}
+
+
+.navbar ul li a:hover{
+  color: #e67e22;
+}
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  font-size: 10px;
+  background-color: white;
+  transition: all 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+  font-size: 30px;
+  color: #2c3e50;
+  transition: all 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: #2c3e50;
+  transition: all 1s ease 0s;
+  font-size: 15px;
+}
+.navbar.solid .navbar-brand img{
+  display: none;
+  transition: all 1s ease 0s;
+}

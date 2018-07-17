@@ -1,0 +1,295 @@
+.section {
+	background-color:#fff;
+	border-radius:4px;
+	padding:35px 25px;
+	margin-bottom:25px;
+}
+
+body{
+	background: whitesmoke;
+}
+
+.job-postdetails .form-group {
+	position:relative;
+	margin-bottom:30px;
+ }
+ 
+.postdetails h4 span{
+	font-size: 14px;
+	color: #ed1c24;
+	line-height:26px;
+ }
+
+.job-postdetails .category-dropdown {
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+} 
+
+.job-postdetails .category-dropdown a {
+	display: block;
+}
+
+.job-postdetails .category-dropdown .pull-right {
+	margin-top: 15px;
+}
+
+.job-postdetails .dropdown-menu {
+	width: 100%;
+	padding: 10px 0;
+}
+
+.job-postdetails .location .category-dropdown {
+	width: 48%;
+}
+
+.job-postdetails .select-price input[type="text"] {
+	width: 25%;
+}
+
+.job-postdetails .characters {
+	margin-bottom: 30px;
+}
+
+.job-postdetails .agreement.checkbox label:before {
+	top: 0;
+}
+
+.job-postdetails h4 {
+	border-bottom: 1px solid #f2f2f2;
+	color:#000;
+	font-size:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	margin-top:0;
+ }
+ .postdetails  li a {
+	color: #838383;
+	font-size:16px;
+}
+
+.postdetails  li a:hover, 
+.postdetails  li.active a, 
+.postdetails  .edit:hover {
+	color: #00a651;
+}
+
+.job-postdetails label {
+	font-size: 16px;
+	font-weight:400;
+	color:#000;
+}
+
+.job-postdetails label.label-title {
+	padding-top:10px;
+}
+
+.job-postdetails input[type="radio"]+label {
+	cursor: pointer;
+	margin-right:20px;
+	padding-left:25px;
+	vertical-align:sub !important;
+	position:relative;
+	color:#838383;
+	margin-bottom:0;
+}
+
+.job-postdetails input[type="radio"] {
+	display:none;
+}
+
+.job-postdetails input[type="radio"] + label:before,
+.job-postdetails input[type="radio"] + label:after {
+	position:absolute;
+	top:5px;
+	left:0;
+	content:"";
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	display:inline-block;
+	background-color:transparent;
+}
+
+.job-postdetails input[type="radio"] + label:before {
+	border: 2px solid #00a651;
+}
+
+.job-postdetails input[type="radio"]:checked + label:after {
+	border: 5px solid #00a651;
+}
+
+.required {
+	color: #ed1c24;
+}
+
+.job-postdetails .form-control::-webkit-input-placeholder { 
+	color: #cfcfcf;  
+}
+.job-postdetails .form-control::-moz-placeholder { 
+	color: #cfcfcf;  
+}
+.job-postdetails .form-control:-ms-input-placeholder { 
+	color: #cfcfcf;  
+}
+.job-postdetails .form-control:-moz-placeholder { 
+	color: #cfcfcf;  
+}
+.select-price input[type="text"] {
+	display:inline-block;
+	width:initial;
+	margin:0 15px;
+}
+
+.postdetails .select-price {
+	margin-bottom:40px;
+}
+
+.checkbox label input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 22px;
+    color: #000000;
+    font-weight: 400;
+    margin-right:35px;
+	margin-bottom:10px;
+}
+
+.checkbox label:last-child {
+	margin-right:0;
+}
+
+.postdetails .model-name {
+	margin-bottom:45px;
+}
+.postdetails .item-description {
+	margin-bottom:15px;
+}
+
+.job-postdetails .agreement  label {
+	line-height:28px;
+	color:#494949;
+	margin-bottom:40px;
+}
+
+.agreement.checkbox label:before {
+	top:8px;
+}
+
+.job-postdetails .agreement label a, 
+.quick-rules .lead a {
+	font-weight:500;
+	color:#000;
+}
+
+.job-postdetails .agreement label a:hover, 
+.quick-rules .lead a:hover {
+	color:#00a651;
+
+}
+
+.quick-rules .lead {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+	margin: 16px 0 35px;
+}
+
+.quick-rules .lead a {
+	font-weight: 400;
+}
+
+.quick-rules li {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+
+.quick-rules li:before {
+	position: absolute;
+	color: #00a651;
+	font-size: 16px;
+	content: "\f105";
+	font-family:'FontAwesome';
+	left: 0;
+	top: 0;	
+}
+
+.postdetails input[type="radio"] + label:before{
+    border: 2px solid #00a651;
+}
+.postdetails input[type="radio"]:checked + label:after{
+    border: 5px solid #00a651;
+}
+
+.category-dropdown a:hover,
+.dropdown-menu>li>a:hover {
+	color: #00a651;
+}
+.form-control::-webkit-input-placeholder {
+   color: #a0a0a0;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+   color: #a0a0a0;  
+}
+
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #a0a0a0;  
+}
+
+.form-control:-ms-input-placeholder {  
+   color: #a0a0a0;  
+}
+
+.job-postdetails .form-group.brand-name,
+.job-postdetails .form-group.address li:last-child {
+	margin-bottom: 10px;
+}
+.category-dropdown {
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    border-radius: 5px 0px 0px 5px; 
+    min-width: 200px;
+    line-height: 45px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.category-dropdown a i{
+	margin-left: 5px;
+}
+
+.category-dropdown a {
+    font-size: 16px;
+    margin: 0;
+    color: #000;
+    border: none;
+    border-radius: 5px 0 0 5px;
+	text-transform: capitalize;
+	font-family: 'MyriadPro-Regular', sans-serif;
+}
+.checkbox label:before {
+	position: absolute;
+	color: #9e9e9e;
+	font-size: 16px;
+	content: "\f096";
+	font-family:'FontAwesome';
+	left: 0;
+	top: 0;
+}
+.checkbox label.checked:before {
+	content: "\f046";
+	color: #00a651;
+}
+
+.agreement.checkbox label:before {
+	top:8px;
+}
+.job-postdetails .agreement.checkbox label:before {
+	top: 0;
+}

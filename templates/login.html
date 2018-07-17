@@ -1,0 +1,121 @@
+
+	<link rel="stylesheet" type="text/css" href="css/register.css">	
+
+<style type="text/css">
+	.navbar .navbar-brand{
+		color: #2d3436;
+	}
+
+	footer{
+		display: none;
+	}
+
+
+</style>
+<div ng-controller="loginTabs as panel">
+	<div class="row no-gutters">
+	<div class="col">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand mx-auto" href="#/!"><img class="brand-image" src="images/recruitment.png">JobsFinder</a> 
+			</nav>
+			<div class="logo-text">
+				<h3>The easiest way to get your new job</h3>
+				<p>We offer 12000 jobs vacation right now</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<section>
+			<div class="form animated flipInX">
+
+			    <ul class="tab-group">
+			    	<li class="tab" ng-class="{active: panel.isSelected(2)}"><a href ng-click="panel.selectTab(2)">Log In</a></li>
+				    <li class="tab" ng-class="{active: panel.isSelected(1)}"><a href ng-click="panel.selectTab(1)">Sign Up</a></li>
+			    </ul>
+		    
+		      	<div class="tab-content">
+		        	<div id="signup" ng-show="panel.isSelected(1)" >   
+		          		<h3>Sign Up for Free</h3>
+		          
+			          <form name="signupForm" class="signupForm" novalidate>
+			          
+				          <div class="top-row">
+				            <div class="field-wrap">
+				            	<input type="text" required autocomplete="off" placeholder="First name" name="fname" ng-model="fname">
+				            	<span style="color:indianred" ng-show="signupForm.fname.$dirty && signupForm.fname.$invalid && signupForm.fname.$touched">
+									<span ng-show="signupForm.fname.$error.required">First name is required.</span>
+								</span>
+				            </div>
+				        
+				            <div class="field-wrap">
+				            	<input type="text"required autocomplete="off" placeholder="Last name" name="lname" ng-model="lname">
+				            	<span style="color:indianred" ng-show="signupForm.lname.$dirty && signupForm.lname.$invalid && signupForm.lname.$touched">
+									<span ng-show="signupForm.lname.$error.required">Last name is required.</span>
+								</span>
+				            </div>
+				          </div>
+
+				          <div class="field-wrap">
+				            <input type="email" required autocomplete="off" placeholder="Email" name="signupemail" ng-model="signupemail">
+				             	<span style="color: indianred" ng-show="signupForm.signupemail.$dirty && signupForm.signupemail.$invalid && signupForm.signupemail.$touched">
+			                        <span ng-show="signupForm.signupemail.$error.required">Email is required</span>
+			                        <span ng-show="signupForm.signupemail.$error.email">Invalid email</span>  
+			                 	</span>
+				          </div>
+				          
+				          <div class="field-wrap">
+				            <input type="password"required autocomplete="off" placeholder="Password" name="signpassword" ng-model="signpassword">
+				            <span style="color: indianred" ng-show="signupForm.signpassword.$dirty && signupForm.signpassword.$invalid && signupForm.signpassword.$touched">
+				            	<span ng-show="signupForm.signpassword.$error.required">Password is required</span>
+				          	</span>
+				          </div>
+
+				          <div class="field-wrap">
+				            <input type="password"required autocomplete="off" placeholder="Confirm password" name="cpass" ng-model="cpass">
+				            <span style="color: indianred" ng-show="signupForm.cpass.$dirty && signupForm.cpass.$invalid && signupForm.cpass.$touched">
+				            	<span ng-show="signupForm.cpass.$error.required">Password is required</span>
+				          	</span>
+				          </div>
+				          
+				          <button class="button button-block" ng-click="signup()" ng-disabled = "signupForm.signpassword.$dirty && signupForm.signpassword.$invalid || signupForm.signupemail.$dirty && signupForm.signupemail.$invalid || signupForm.cpass.$dirty && signupForm.cpass.$invalid">Get Started</button>
+			         
+			          </form>
+		        	</div>
+	<!---------------------------------------------------------------------------------------------------------------------->	        
+		        	<div id="login"  ng-show="panel.isSelected(2)" >   
+		          		<h3>Welcome Back!</h3>
+		          
+				          <form class="loginForm" name="loginForm" novalidate>
+				          
+				            <div class="field-wrap">
+				            	<input type="email"required autocomplete="off"  placeholder="Email" name="loginemail" ng-model="loginemail">
+				            	<span style="color: indianred" ng-show="loginForm.loginemail.$dirty && loginForm.loginemail.$invalid && loginForm.loginemail.$touched">
+			                        <span ng-show="loginForm.loginemail.$error.required">Email is required</span>
+			                        <span ng-show="loginForm.loginemail.$error.email">Invalid email</span>  
+			                 	</span>
+				          	</div>
+				          
+				          <div class="field-wrap">
+				            <input type="password"required autocomplete="off"  placeholder="Password" name="logpassword" ng-model="logpassword">
+				            <span style="color: indianred" ng-show="loginForm.logpassword.$dirty && loginForm.logpassword.$invalid && loginForm.logpassword.$touched">
+				            	<span ng-show="loginForm.logpassword.$error.required">Password is required</span>
+				          	</span>
+				          </div>
+				          
+				          <p class="forgot"><a href="#">Forgot Password?</a></p>
+				          
+				          <button class="button button-block" ng-click="login()" ng-disabled = "loginForm.logpassword.$dirty && loginForm.logpassword.$invalid || loginForm.loginemail.$dirty && loginForm.loginemail.$invalid">Log In</button>
+				          
+				          </form>
+		       		 </div>
+		      	</div>   
+			</div> 
+
+		</section>
+	</div>
+</div>
+</div>
+
+
